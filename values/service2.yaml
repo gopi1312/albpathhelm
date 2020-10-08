@@ -1,0 +1,10 @@
+app:
+  name: stackapp
+  replicaCount: 1
+  container:
+    image: stacksimplify/kube-nginxapp1:1.0.0
+    port: 80
+  service:
+    type: NodePort
+    port: 80
+  path: /app1/index.html

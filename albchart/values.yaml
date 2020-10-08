@@ -1,0 +1,10 @@
+app:
+  name: app
+  replicaCount: 1
+  container:
+    image: 181300079289.dkr.ecr.us-east-1.amazonaws.com/demopoc1:latest
+    port: 8080
+  service:
+    type: ClusterIP
+    port: 8080
+
